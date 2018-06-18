@@ -1,0 +1,40 @@
+/* defaults */
+.Content-defaults {
+    padding-top:3rem;
+    background-color: #fffbc4;
+}
+
+
+/* typeface */
+.Content-h3 {
+    font-family: 'Shrikhand', cursive;
+    letter-spacing: 1px;
+  }
+
+.Content-p {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.35em;
+}
+
+/* media queries */
+@media screen and (min-width: 485px){
+    .Content-p, .Content-h3 {
+        padding-left:4rem;
+        padding-right: 3rem;
+    }
+}
+
+@media screen and (min-width: 790px){
+    .Content-p, .Content-h3 {
+        /* padding-left:8rem;
+        padding-right: 6rem; */
+    }
+}
+
+@media screen and (min-width: 933px){
+    .Content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows : auto;
+    }
+}

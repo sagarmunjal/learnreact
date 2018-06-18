@@ -1,0 +1,65 @@
+/* fonts import */
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+
+@font-face {
+    font-family: 'montserratblack';
+    src: url('./webfontkit-20180617-042137/montserrat-black-webfont.woff2') format('woff2'),
+         url('./webfontkit-20180617-042137/montserrat-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* defaults */
+.Hero {
+    text-align: center;
+}
+
+/* background */
+.Hero-bg{
+    background-color: #00DCFF;
+    height:100vh;
+}
+
+/* additional font makeup */
+.Hero-emphasis {
+    color: #fff07b;
+    text-shadow: 2px 2px #ff0000;
+}
+.Hero-text-separated {
+    letter-spacing: 0.1em;
+}
+.Hero-muted {
+    color : #578389;
+}
+.Hero-white {
+    color:white;
+}
+
+/* custom typeface used */
+.Hero-h1 {
+    font-family: 'montserratblack', 'Roboto', sans-serif;
+}
+.Hero-p {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    word-spacing : 0.2rem;
+}
+.Hero-h3 {
+    font-family: 'Shrikhand', cursive;
+}
+
+/*centering*/
+.Hero-center {
+    height:100vh;
+    position: relative; 
+}
+
+.Hero-center > .Hero-content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
